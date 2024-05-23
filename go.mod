@@ -5,9 +5,9 @@ require (
 	github.com/xanzy/go-gitlab v0.100.0
 	google.golang.org/grpc v1.62.1
 	google.golang.org/protobuf v1.33.0
-	k8s.io/api v0.29.3
-	k8s.io/apimachinery v0.29.3
-	k8s.io/client-go v0.29.3
+	k8s.io/api v0.30.1
+	k8s.io/apimachinery v0.30.1
+	k8s.io/client-go v0.30.1
 )
 
 require (
@@ -52,6 +52,6 @@ require (
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
 
-go 1.21
+go 1.22.0
 
 toolchain go1.21.5
