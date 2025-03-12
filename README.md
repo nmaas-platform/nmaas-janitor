@@ -11,15 +11,15 @@
     <br />
     <a href="https://docs.nmaas.eu/">Explore documentation</a>
     ·
-    <a href="https://github.com/nmaas-platform/nmaas-janitor/issues">Report Bug</a>
+    <a href="https://gitlab.software.geant.org/nmaas/nmaas-janitor/issues">Report Bug</a>
     ·
-    <a href="https://github.com/nmaas-platform/nmaas-janitor/issues">Request Feature</a>
+    <a href="https://gitlab.software.geant.org/nmaas/nmaas-janitor/issues">Request Feature</a>
   </p>
 </div>
 
 ## nmaas Janitor Component
 
-[nmaas Janitor](https://github.com/nmaas-platform/nmaas-janitor) is a microservice that interacts with GitLab and Kubernetes API to perform various low level operations on behalf of the nmaas Platform
+[nmaas Janitor](https://gitlab.software.geant.org/nmaas/nmaas-janitor) is a microservice that interacts with GitLab and Kubernetes API to perform various low level operations on behalf of the nmaas Platform
 
 ### Features
 
