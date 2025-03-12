@@ -1,4 +1,4 @@
-# NMaaS Janitor
+# nmaas Janitor
 
 ### Technologies
 
