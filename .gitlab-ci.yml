@@ -28,6 +28,18 @@ test:
       protoc/bin/protoc --proto_path=api/proto/v1 --proto_path=third_party --go_out=plugins=grpc:pkg/api/v1 config-service.proto
       go test ./...
 
+sonar:
+  stage: test
+  image:
+    name: sonarsource/sonar-scanner-cli:latest
+    entrypoint: [""]
+  only:
+    - develop
+    - /^release/
+  script:
+    - sonar-scanner -Dsonar.host.url=${SONAR_HOST} -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.projectName=${SONAR_PROJECT_NAME} -Dsonar.branch.name=${CI_COMMIT_BRANCH} -Dsonar.login=${SONAR_LOGIN_TOKEN}
+  allow_failure: true
+
 build_and_push_latest_image:
   stage: build
   only:
