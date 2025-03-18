@@ -84,7 +84,7 @@ func NewNamespaceServiceServer(kubeAPI kubernetes.Interface) v1.NamespaceService
 }
 
 func logLine(message string) {
-    log.Printf(message)
+    log.Printf("%s", message)
 }
 
 func checkAPI(api string, current string) error {

@@ -1,8 +1,8 @@
-FROM golang:1.22 as builder
+FROM golang:1.24 as builder
 WORKDIR /
 RUN apt-get update && apt-get install unzip
-RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v25.1/protoc-25.1-linux-x86_64.zip
-RUN unzip protoc-25.1-linux-x86_64.zip -d /
+RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v29.1/protoc-29.1-linux-x86_64.zip
+RUN unzip protoc-29.1-linux-x86_64.zip -d /
 WORKDIR /build
 COPY api/ api
 COPY pkg/ pkg
@@ -28,6 +28,9 @@ RUN /bin/protoc --proto_path=/build/api/proto/v1 --proto_path=/build/third_party
 RUN CGO_ENABLED=0 GOOS=linux go test ./...
 WORKDIR /build/pkg/cmd/server
 RUN CGO_ENABLED=0 GOOS=linux go build
+
+RUN cat /build/go.mod
+RUN cat /build/go.sum
 
 FROM alpine:latest
 MAINTAINER nmaas@lists.geant.org
