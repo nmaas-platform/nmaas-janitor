@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"bitbucket.software.geant.org/projects/NMAAS/repos/nmaas-janitor/pkg/api/cmd"
+	"gitlab.software.geant.org/nmaas/nmaas-janitor/pkg/api/cmd"
 )
 
 func main() {

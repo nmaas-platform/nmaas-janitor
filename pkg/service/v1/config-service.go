@@ -17,7 +17,7 @@ import (
 	"bytes"
 	"io"
 
-	v1 "bitbucket.software.geant.org/projects/NMAAS/repos/nmaas-janitor/pkg/api/v1"
+	v1 "gitlab.software.geant.org/nmaas/nmaas-janitor/pkg/api/v1"
 	"github.com/johnaoss/htpasswd/apr1"
 )
 

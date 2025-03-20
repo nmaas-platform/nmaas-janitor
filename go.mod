@@ -1,4 +1,4 @@
-module bitbucket.software.geant.org/projects/NMAAS/repos/nmaas-janitor
+module gitlab.software.geant.org/nmaas/nmaas-janitor
 
 require (
    github.com/johnaoss/htpasswd v0.0.0-20190120213328-a0cc59f788da
