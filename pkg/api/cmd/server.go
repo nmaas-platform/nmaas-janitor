@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/rest"
-	"github.com/xanzy/go-gitlab"
+	"gitlab.com/gitlab-org/api/client-go"
 	"log"
 
 	"gitlab.software.geant.org/nmaas/nmaas-janitor/pkg/protocol/grpc"

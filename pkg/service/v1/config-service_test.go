@@ -3,7 +3,7 @@ package v1
 import (
 	v1 "gitlab.software.geant.org/nmaas/nmaas-janitor/pkg/api/v1"
 	"context"
-	"github.com/xanzy/go-gitlab"
+	"gitlab.com/gitlab-org/api/client-go"
 	corev1 "k8s.io/api/core/v1"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

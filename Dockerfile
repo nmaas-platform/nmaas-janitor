@@ -11,7 +11,7 @@ COPY go.mod/ .
 COPY go.sum/ .
 
 RUN go get github.com/johnaoss/htpasswd/apr1
-RUN go get github.com/xanzy/go-gitlab
+RUN go get gitlab.com/gitlab-org/api/client-go
 RUN go get k8s.io/api/core/v1
 RUN go get k8s.io/apimachinery/pkg/apis/meta/v1
 RUN go get k8s.io/apimachinery/pkg/types

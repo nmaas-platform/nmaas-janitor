@@ -6,7 +6,7 @@
 * [Protobuf](https://protobuf.dev/)
 * [gRPC](https://grpc.io/)
 * [kubernetes/client-go](https://github.com/kubernetes/client-go)
-* [go-gitlab](https://pkg.go.dev/github.com/xanzy/go-gitlab)
+* [gitlab-org/api/client-go](https://gitlab.com/gitlab-org/api/client-go)
 
 ### Deploying
 
