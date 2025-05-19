@@ -1,6 +1,7 @@
 stages:
   - test
   - build
+  - mend
 
 test:
   stage: test
@@ -79,3 +80,19 @@ build_and_push_release_image:
       docker build -t $DOCKER_REPOSITORY_LOCAL:$IMAGE_TAG .
       docker push $DOCKER_REPOSITORY_LOCAL:$IMAGE_TAG
       docker logout $DOCKER_REPOSITORY
+
+mend:
+  stage: mend
+  image: openjdk:21-jdk-slim
+  only:
+    - /^release/
+  variables:
+    PRODUCT_NAME: "nmaas"
+    PROJECT_NAME: "nmaas-janitor"
+  script:
+    - |
+      export PRODUCT_VERSION=$(echo $CI_COMMIT_BRANCH | cut -c 9-)
+      export PROJECT_VERSION=$PRODUCT_VERSION
+      apt-get update && apt-get install -y curl
+      curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar
+      java -jar wss-unified-agent.jar -userKey ${MEND_USER_KEY} -apiKey ${MEND_API_KEY} -projectVersion ${PROJECT_VERSION} -project ${PROJECT_NAME} -productVersion ${PRODUCT_VERSION} -product ${PRODUCT_NAME} -c ./ws/ws.config -d ./
