@@ -1,8 +1,8 @@
 FROM golang:1.24 AS builder
 WORKDIR /
 RUN apt-get update && apt-get install unzip
-RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v29.1/protoc-29.1-linux-x86_64.zip
-RUN unzip protoc-29.1-linux-x86_64.zip -d /
+RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v31.1/protoc-31.1-linux-x86_64.zip
+RUN unzip protoc-31.1-linux-x86_64.zip -d /
 WORKDIR /build
 COPY api/ api
 COPY pkg/ pkg
