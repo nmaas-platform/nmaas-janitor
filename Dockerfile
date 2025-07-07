@@ -8,7 +8,6 @@ COPY api/ api
 COPY pkg/ pkg
 COPY third_party/ third_party
 COPY go.mod/ .
-COPY go.sum/ .
 
 RUN go get google.golang.org/grpc
 RUN go install google.golang.org/grpc

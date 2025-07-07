@@ -2,7 +2,7 @@ module gitlab.software.geant.org/nmaas/nmaas-janitor
 
 require (
    github.com/johnaoss/htpasswd v0.0.0-20190120213328-a0cc59f788da
-   gitlab.com/gitlab-org/api/client-go v0.130.1
+   gitlab.com/gitlab-org/api/client-go v0.128.0
    google.golang.org/grpc v1.73.0
    google.golang.org/protobuf v1.36.6
    k8s.io/api v0.33.2
