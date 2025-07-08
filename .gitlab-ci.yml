@@ -1,6 +1,5 @@
 stages:
   - test
-  - sonar
   - build
   - mend
 
@@ -15,7 +14,9 @@ test:
       go test ./...
 
 sonar:
-  stage: sonar
+  stage: test
+  needs:
+    - test
   image:
     name: sonarsource/sonar-scanner-cli:latest
     entrypoint: [""]
