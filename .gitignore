@@ -1,3 +1,4 @@
 .idea/
 pkg/cmd/server/server
 /go.sum
+/coverage.out
