@@ -12,6 +12,9 @@ test:
     - |
       go mod tidy
       go test -cover -coverprofile="coverage.out" ./...
+  artifacts:
+    paths:
+      - coverage.out
 
 sonar:
   stage: test
