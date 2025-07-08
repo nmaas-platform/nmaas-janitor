@@ -11,7 +11,7 @@ test:
   script:
     - |
       go mod tidy
-      go test ./...
+      go test -cover -coverprofile="coverage.out" ./...
 
 sonar:
   stage: test
