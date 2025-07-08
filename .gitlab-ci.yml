@@ -84,4 +84,9 @@ mend:
       export PROJECT_VERSION=$PRODUCT_VERSION
       apt-get update && apt-get install -y curl
       curl -LJO https://github.com/whitesource/unified-agent-distribution/releases/latest/download/wss-unified-agent.jar
+      curl -LJO https://go.dev/dl/go1.24.4.linux-amd64.tar.gz
+      tar -C /usr/local -xzf go1.24.4.linux-amd64.tar.gz
+      export PATH=$PATH:/usr/local/go/bin
+      go version
+      go mod tidy
       java -jar wss-unified-agent.jar -userKey ${MEND_USER_KEY} -apiKey ${MEND_API_KEY} -projectVersion ${PROJECT_VERSION} -project ${PROJECT_NAME} -productVersion ${PRODUCT_VERSION} -product ${PRODUCT_NAME} -c ./ws/ws.config -d ./
