@@ -1,4 +1,5 @@
 > ⚠️ **Archived project**: This repository is no longer maintained and retained **for reference purposes only**.
+#
 
 <div align="center">
   <a href="https://docs.nmaas.eu/">
@@ -19,6 +20,7 @@
   </p>
 </div>
 
+#
 ## 📦 Project archived
 
 This project has been **archived** and is **no longer maintained**.
@@ -28,6 +30,7 @@ Starting with nmaas **release 1.8.0**, all features previously provided by this 
 ➡️ The actively maintained replacement of the provided features can be found within the **[nmaas-platform](https://gitlab.software.geant.org/nmaas/nmaas-platform)**.
 
 This repository is retained **for reference purposes only**.
+#
 
 ## nmaas Janitor Component
 
