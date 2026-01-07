@@ -1,3 +1,5 @@
+> ⚠️ **Archived project**: This repository is no longer maintained and retained **for reference purposes only**.
+
 <div align="center">
   <a href="https://docs.nmaas.eu/">
     <img src="docs/nmaas-logo-blue.png" alt="Logo" width="206" height="48">
@@ -16,6 +18,16 @@
     <a href="https://gitlab.software.geant.org/nmaas/nmaas-janitor/issues">Request Feature</a>
   </p>
 </div>
+
+## 📦 Project archived
+
+This project has been **archived** and is **no longer maintained**.
+
+Starting with nmaas **release 1.8.0**, all features previously provided by this project were **re-implemented and integrated into the nmaas-platform** module. As a result, this repository is now **obsolete** and will not receive further updates, bug fixes, or support.
+
+➡️ The actively maintained replacement of the provided features can be found within the **[nmaas-platform](https://gitlab.software.geant.org/nmaas/nmaas-platform)**.
+
+This repository is retained **for reference purposes only**.
 
 ## nmaas Janitor Component
 
